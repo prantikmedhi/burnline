@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="Burnline">
+  <defs>
+    <linearGradient id="field" x1="16" y1="10" x2="116" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7775FF"/><stop offset=".55" stop-color="#514FC9"/><stop offset="1" stop-color="#20284D"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="160" rx="28" fill="#F5F7FB"/>
+  <g transform="translate(24 16)">
+    <rect x="4" y="4" width="120" height="120" rx="29" fill="url(#field)"/>
+    <rect x="22" y="27" width="84" height="74" rx="25" fill="#FFFFFF" fill-opacity=".12" stroke="#FFFFFF" stroke-opacity=".28"/>
+    <path d="M32 68C43 35 55 91 68 62S87 45 97 55" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="97" cy="55" r="6" fill="#91E5FF" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+  <text x="178" y="87" fill="#12141B" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="54" font-weight="650" letter-spacing="-1">Burnline</text>
+  <text x="182" y="117" fill="#687084" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="16" font-weight="500">Local agent usage, in one glance.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Burnline mark">
+  <defs>
+    <linearGradient id="field" x1="18" y1="12" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7775FF"/>
+      <stop offset=".55" stop-color="#514FC9"/>
+      <stop offset="1" stop-color="#20284D"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientTransform="translate(92 29) rotate(126) scale(80)">
+      <stop stop-color="#67D5FF" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#67D5FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="29" fill="url(#field)"/>
+  <rect x="5" y="5" width="118" height="118" rx="28" fill="url(#light)"/>
+  <rect x="22" y="27" width="84" height="74" rx="25" fill="#FFFFFF" fill-opacity=".12" stroke="#FFFFFF" stroke-opacity=".28"/>
+  <path d="M32 68C43 35 55 91 68 62S87 45 97 55" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="97" cy="55" r="6" fill="#91E5FF" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M26 41C42 25 80 24 101 42" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="3" stroke-linecap="round"/>
+</svg>
