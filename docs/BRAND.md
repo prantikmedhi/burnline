@@ -10,7 +10,7 @@ Write it as one word with normal title case: **Burnline**. Do not append “AI d
 
 A single live waveform crosses a glass lens and ends at a small terminal point. The shape represents separate local agent streams reduced to one readable signal.
 
-The full app icon uses an indigo glass tile, a white waveform, and one cyan endpoint. The menu bar version is monochrome, borderless, and animated at a low rate. Reduce Motion nearly pauses it.
+The full app icon uses an indigo glass tile, a white waveform, and one cyan endpoint. The same compact full-color mark appears in the menu bar so Burnline remains identifiable among monochrome utilities. Pressing it gives one restrained scale response; Reduce Motion disables that response.
 
 Keep clear space equal to the endpoint diameter. Never add a robot, brain, magic wand, chat bubble, or decorative sparkle.
 

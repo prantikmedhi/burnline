@@ -117,7 +117,7 @@ The provider list is one continuous surface. Separators begin after the symbol c
 
 ## Motion
 
-The menu bar glyph is a live waveform. Idle motion is slow; refresh motion accelerates. It stays monochrome to behave like a native menu bar item. Reduce Motion nearly pauses the waveform.
+The menu bar uses the compact full-color Burnline mark rather than an abstract waveform, so the popover’s anchor is immediately identifiable. Pressing the mark triggers one 220 ms scale response. There is no idle animation. Reduce Motion disables the response.
 
 Refresh feedback is a short 220 ms smooth rotation. There are no staged card entrances, bouncing rows, parallax, or looping background motion. Frequently used controls respond immediately.
 
@@ -132,7 +132,7 @@ Refresh feedback is a short 220 ms smooth rotation. There are no staged card ent
 
 ## Brand Mark
 
-The mark is a glass lens carrying a single spend waveform and terminal dot. It expresses many local agent streams collapsing into one readable signal. The app icon uses the same geometry over deep indigo glass. The menu bar version is monochrome and omits the tile.
+The mark is a glass lens carrying a single spend waveform and terminal dot. It expresses many local agent streams collapsing into one readable signal. The app icon and menu bar item use the same indigo glass tile so the product is recognizable at a glance.
 
 ## Do / Do Not
 

@@ -332,38 +332,6 @@ private struct BrandLens: View {
     }
 }
 
-struct BurnlineGlyph: View {
-    let active: Bool
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-
-    var body: some View {
-        TimelineView(.periodic(from: .now, by: reduceMotion ? 10 : 0.14)) { context in
-            Canvas { graphics, size in
-                let phase = context.date.timeIntervalSinceReferenceDate * (active ? 4.2 : 0.85)
-                let mid = size.height / 2
-                var wave = Path()
-                wave.move(to: CGPoint(x: 1, y: mid))
-                let steps = 18
-                for index in 1...steps {
-                    let x = CGFloat(index) / CGFloat(steps) * (size.width - 2) + 1
-                    let envelope = sin(.pi * CGFloat(index) / CGFloat(steps))
-                    let y = mid + sin(CGFloat(phase) + CGFloat(index) * 0.62) * 3.6 * envelope
-                    wave.addLine(to: CGPoint(x: x, y: y))
-                }
-                graphics.stroke(wave, with: .color(.primary), style: StrokeStyle(lineWidth: 1.55, lineCap: .round, lineJoin: .round))
-
-                let pulse = active ? 1.0 : 0.62 + 0.18 * sin(phase)
-                graphics.fill(
-                    Path(ellipseIn: CGRect(x: size.width - 3.2, y: mid - 1.6, width: 3.2, height: 3.2)),
-                    with: .color(.primary.opacity(pulse))
-                )
-            }
-        }
-        .frame(width: 18, height: 14)
-        .accessibilityLabel("Burnline usage monitor")
-    }
-}
-
 private extension View {
     @ViewBuilder
     func liquidGlass(cornerRadius: CGFloat, tint: Color? = nil, interactive: Bool = false) -> some View {
