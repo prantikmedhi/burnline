@@ -19,7 +19,13 @@ It reads usage already stored on your Mac by Claude Code, Codex, OpenCode, Herme
 
 Costs are local records or estimates, not provider invoices. Burnline labels partial totals when a model has no matching price.
 
-## Run it
+## Install
+
+Download the universal DMG from the [latest GitHub release](https://github.com/prantikmedhi/burnline/releases/latest), open it, and drag Burnline into Applications.
+
+The current community build is ad-hoc signed and not notarized. On first launch, macOS may ask you to confirm by right-clicking Burnline and choosing **Open**. Burnline requires macOS 14 or newer.
+
+## Build from source
 
 You need macOS 14 or newer and Xcode 16 or newer.
 
