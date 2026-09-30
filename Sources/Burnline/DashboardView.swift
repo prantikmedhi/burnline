@@ -367,18 +367,27 @@ struct BurnlineGlyph: View {
 private extension View {
     @ViewBuilder
     func liquidGlass(cornerRadius: CGFloat, tint: Color? = nil, interactive: Bool = false) -> some View {
+#if compiler(>=6.2)
         if #available(macOS 26.0, *) {
             self.glassEffect(
                 .regular.tint(tint).interactive(interactive),
                 in: .rect(cornerRadius: cornerRadius)
             )
         } else {
-            self
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-                .overlay {
-                    RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                        .strokeBorder(.white.opacity(0.16), lineWidth: 0.6)
-                }
+            fallbackGlass(cornerRadius: cornerRadius, tint: tint)
         }
+#else
+        fallbackGlass(cornerRadius: cornerRadius, tint: tint)
+#endif
+    }
+
+    func fallbackGlass(cornerRadius: CGFloat, tint: Color?) -> some View {
+        self
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .background(tint ?? .clear, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .overlay {
+                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                    .strokeBorder(.white.opacity(0.16), lineWidth: 0.6)
+            }
     }
 }
